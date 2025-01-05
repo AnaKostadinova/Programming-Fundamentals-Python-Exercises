@@ -1,0 +1,13 @@
+number_of_people = int(input())
+elevator_capacity = int(input())
+
+courses = 0
+
+if number_of_people % elevator_capacity != 0:
+    courses = number_of_people // elevator_capacity + 1
+elif number_of_people % elevator_capacity == 0:
+    courses = number_of_people // elevator_capacity
+elif number_of_people < elevator_capacity:
+    courses = 1
+
+print((courses))
